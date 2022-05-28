@@ -37,7 +37,7 @@ begin
     );
 
     COUNT_MICROSECONDS:
-    process(mclk, reset, tick)
+    process(mclk, reset)
     begin
         if reset then
             microsec_count <= (others => '0');
