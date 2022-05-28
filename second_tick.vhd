@@ -15,7 +15,7 @@ architecture second_tick_beh of second_tick is
     constant MAX_COUNT  : unsigned(31 downto 0) := to_unsigned(100000000, 32); --This will count up to a second 100000000
 
 begin
-    COUNT : process(mclk, reset, counter, current_tick)
+    COUNT : process(mclk, reset)
     begin
         if reset then
             counter <= (others => '0');
