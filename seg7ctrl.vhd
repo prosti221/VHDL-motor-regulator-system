@@ -35,7 +35,7 @@ begin
             abcdefg => current_abcdefg
     );
 
-    COUNT : process(mclk, reset, counter, current_c)
+    COUNT : process(mclk, reset)
     begin
         if reset then
             counter <= (others => '0');

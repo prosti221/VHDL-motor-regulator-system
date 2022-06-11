@@ -37,7 +37,7 @@ begin
     );
 
     COUNT_MICROSECONDS:
-    process(mclk, reset, tick)
+    process(mclk, reset)
     begin
         if reset then
             microsec_count <= (others => '0');
@@ -47,7 +47,7 @@ begin
     end process COUNT_MICROSECONDS;
 
    PULSE:
-   process(mclk, reset, microsec_count)
+   process(mclk, reset)
    begin
        if reset then
            pwm <= '0';
@@ -57,7 +57,7 @@ begin
    end process PULSE;
 
    FSM:
-   process(mclk, reset, duty_cycle, current_state, next_state)
+   process(all)
    begin
        if reset then
            next_state <= "00";

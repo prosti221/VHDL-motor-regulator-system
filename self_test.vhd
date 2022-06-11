@@ -46,7 +46,7 @@ begin
     );
 
     COUNT_SECONDS:
-    process(mclk, tick, sec_count)
+    process(mclk, tick)
     begin
     if rising_edge(mclk) then
         if (sec_count = UP_TIME) then
