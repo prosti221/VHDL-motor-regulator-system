@@ -1,0 +1,6 @@
+verilog xil_defaultlib --include "/opt/ifi/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/ec67/hdl" --include "../../../../oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/34f8/hdl" \
+"../../../bd/tutorial_bd/ip/tutorial_bd_processing_system7_0_0/sim/tutorial_bd_processing_system7_0_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

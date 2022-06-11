@@ -1,0 +1,291 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May  5 18:22:59 2022
+# Process ID: 16762
+# Current directory: /uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.runs/tutorial_bd_system_struct_0_0_synth_1
+# Command line: vivado -log tutorial_bd_system_struct_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tutorial_bd_system_struct_0_0.tcl
+# Log file: /uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.runs/tutorial_bd_system_struct_0_0_synth_1/tutorial_bd_system_struct_0_0.vds
+# Journal file: /uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.runs/tutorial_bd_system_struct_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source tutorial_bd_system_struct_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/uio/hume/student-u83/carlosan/privat/in3160/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/ifi/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top tutorial_bd_system_struct_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16806
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2528.340 ; gain = 0.000 ; free physical = 21167 ; free virtual = 36916
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'tutorial_bd_system_struct_0_0' [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ip/tutorial_bd_system_struct_0_0/synth/tutorial_bd_system_struct_0_0.vhd:71]
+INFO: [Synth 8-3491] module 'system_struct' declared at '/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/system_struct.vhd:5' bound to instance 'U0' of component 'system_struct' [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ip/tutorial_bd_system_struct_0_0/synth/tutorial_bd_system_struct_0_0.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'system_struct' [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/system_struct.vhd:20]
+INFO: [Synth 8-3491] module 'q_struct' declared at '/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/quadrature_struct.vhd:5' bound to instance 'q_struct_0' of component 'q_struct' [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/system_struct.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'q_struct' [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/quadrature_struct.vhd:17]
+INFO: [Synth 8-3491] module 'quadrature_decoder' declared at '/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/quadrature_decoder.vhd:5' bound to instance 'DECODER_O' of component 'quadrature_decoder' [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/quadrature_struct.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'quadrature_decoder' [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/quadrature_decoder.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'quadrature_decoder' (1#1) [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/quadrature_decoder.vhd:16]
+INFO: [Synth 8-3491] module 'input_synchronizer_ent' declared at '/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/input_synchronizer.vhd:5' bound to instance 'INPUT_SYNCHRONIZER' of component 'input_synchronizer_ent' [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/quadrature_struct.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'input_synchronizer_ent' [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/input_synchronizer.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'input_synchronizer_ent' (2#1) [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/input_synchronizer.vhd:14]
+INFO: [Synth 8-3491] module 'seg7ctrl' declared at '/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/seg7ctrl.vhd:5' bound to instance 'SEG_7' of component 'seg7ctrl' [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/quadrature_struct.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'seg7ctrl' [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/seg7ctrl.vhd:17]
+INFO: [Synth 8-3491] module 'bin2ssd' declared at '/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/bin2ssd.vhd:4' bound to instance 'BIN' of component 'bin2ssd' [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/seg7ctrl.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'bin2ssd' [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/bin2ssd.vhd:11]
+INFO: [Synth 8-226] default block is never used [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/bin2ssd.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'bin2ssd' (3#1) [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/bin2ssd.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'seg7ctrl' (4#1) [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/seg7ctrl.vhd:17]
+	Parameter RCOUNT_WIDTH bound to: 20 - type: integer 
+	Parameter TEN_MS_COUNT bound to: 1000000 - type: integer 
+INFO: [Synth 8-3491] module 'velocity_reader' declared at '/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/velocity_reader.vhd:6' bound to instance 'VELOCITY_READER_0' of component 'velocity_reader' [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/quadrature_struct.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'velocity_reader' [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/velocity_reader.vhd:20]
+	Parameter RCOUNT_WIDTH bound to: 20 - type: integer 
+	Parameter TEN_MS_COUNT bound to: 1000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'velocity_reader' (5#1) [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/velocity_reader.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'q_struct' (6#1) [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/quadrature_struct.vhd:17]
+INFO: [Synth 8-3491] module 'pulse_width_modulator' declared at '/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/pwm.vhd:5' bound to instance 'pwm_0' of component 'pulse_width_modulator' [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/system_struct.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'pulse_width_modulator' [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/pwm.vhd:15]
+INFO: [Synth 8-3491] module 'microsecond_tick' declared at '/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/microsecond_tick.vhd:5' bound to instance 'TICK_0' of component 'microsecond_tick' [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/pwm.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'microsecond_tick' [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/microsecond_tick.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'microsecond_tick' (7#1) [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/microsecond_tick.vhd:12]
+INFO: [Synth 8-226] default block is never used [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/pwm.vhd:62]
+INFO: [Synth 8-226] default block is never used [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/pwm.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'pulse_width_modulator' (8#1) [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/pwm.vhd:15]
+INFO: [Synth 8-3491] module 'output_synchronizer_ent' declared at '/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/output_synchronizer.vhd:5' bound to instance 'output_sync_0' of component 'output_synchronizer_ent' [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/system_struct.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'output_synchronizer_ent' [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/output_synchronizer.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'output_synchronizer_ent' (9#1) [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/output_synchronizer.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'system_struct' (10#1) [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ipshared/fa47/src/system_struct.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'tutorial_bd_system_struct_0_0' (11#1) [/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.gen/sources_1/bd/tutorial_bd/ip/tutorial_bd_system_struct_0_0/synth/tutorial_bd_system_struct_0_0.vhd:71]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2528.340 ; gain = 0.000 ; free physical = 21861 ; free virtual = 37612
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2528.340 ; gain = 0.000 ; free physical = 21887 ; free virtual = 37639
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2528.340 ; gain = 0.000 ; free physical = 21887 ; free virtual = 37639
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2528.340 ; gain = 0.000 ; free physical = 21879 ; free virtual = 37631
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2592.289 ; gain = 0.000 ; free physical = 21719 ; free virtual = 37471
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2592.289 ; gain = 0.000 ; free physical = 21719 ; free virtual = 37470
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2592.289 ; gain = 63.949 ; free physical = 21858 ; free virtual = 37610
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2592.289 ; gain = 63.949 ; free physical = 21858 ; free virtual = 37610
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2592.289 ; gain = 63.949 ; free physical = 21858 ; free virtual = 37610
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2592.289 ; gain = 63.949 ; free physical = 21850 ; free virtual = 37602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   31 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   4 Input   12 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 1     
+	   4 Input    8 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 11    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 1     
+	  20 Input    3 Bit        Muxes := 1     
+	   9 Input    2 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 9     
+	   5 Input    1 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 4     
+	   4 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2592.289 ; gain = 63.949 ; free physical = 21828 ; free virtual = 37584
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2592.289 ; gain = 63.949 ; free physical = 21707 ; free virtual = 37463
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2592.289 ; gain = 63.949 ; free physical = 21707 ; free virtual = 37463
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2592.289 ; gain = 63.949 ; free physical = 21705 ; free virtual = 37461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2592.289 ; gain = 63.949 ; free physical = 21705 ; free virtual = 37461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2592.289 ; gain = 63.949 ; free physical = 21705 ; free virtual = 37461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2592.289 ; gain = 63.949 ; free physical = 21705 ; free virtual = 37461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2592.289 ; gain = 63.949 ; free physical = 21705 ; free virtual = 37461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2592.289 ; gain = 63.949 ; free physical = 21705 ; free virtual = 37461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2592.289 ; gain = 63.949 ; free physical = 21705 ; free virtual = 37461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------------------------+-----------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                   | RTL Name                                            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------------------------+-----------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|tutorial_bd_system_struct_0_0 | U0/q_struct_0/VELOCITY_READER_0/pos_shift_reg[9][7] | 10     | 8     | YES          | NO                 | YES               | 8      | 0       | 
++------------------------------+-----------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    26|
+|2     |LUT1   |    24|
+|3     |LUT2   |    49|
+|4     |LUT3   |    29|
+|5     |LUT4   |    41|
+|6     |LUT5   |    56|
+|7     |LUT6   |    76|
+|8     |SRL16E |     8|
+|9     |FDCE   |   108|
+|10    |FDPE   |     1|
+|11    |FDRE   |     9|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2592.289 ; gain = 63.949 ; free physical = 21705 ; free virtual = 37461
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2592.289 ; gain = 0.000 ; free physical = 21758 ; free virtual = 37514
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2592.289 ; gain = 63.949 ; free physical = 21758 ; free virtual = 37514
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2592.289 ; gain = 0.000 ; free physical = 21850 ; free virtual = 37605
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2592.289 ; gain = 0.000 ; free physical = 21794 ; free virtual = 37550
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 2592.289 ; gain = 68.148 ; free physical = 21854 ; free virtual = 37610
+INFO: [Common 17-1381] The checkpoint '/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.runs/tutorial_bd_system_struct_0_0_synth_1/tutorial_bd_system_struct_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP tutorial_bd_system_struct_0_0, cache-ID = 699b7281574b09b1
+INFO: [Coretcl 2-1174] Renamed 9 cell refs.
+INFO: [Common 17-1381] The checkpoint '/uio/hume/student-u83/carlosan/privat/in3160/oblig_10_system2/oblig_10_system2.runs/tutorial_bd_system_struct_0_0_synth_1/tutorial_bd_system_struct_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tutorial_bd_system_struct_0_0_utilization_synth.rpt -pb tutorial_bd_system_struct_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May  5 18:23:34 2022...
