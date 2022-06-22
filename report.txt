@@ -1,5 +1,0 @@
-The biggest challenge has been keeping track of all the different modules and knowing where the problem is when debugging.
-Another problem was towards the end when the behavior in simulation seemed completely normal, but when programmed on the zedboard it behaved incorrectly.
-The motor also seems to not spin for values lower than around 80 on duty_cycle, not sure if this is supposed to be like this, couldn't not figure out how to change this.
-However, when choosing values greater than 80, it behaves normally and seems to work as it should.
-I decided to display the speed in hexadecimal as it seemed the simplest way since it didn't require any changes from the previous modules.
